@@ -10,14 +10,19 @@ from datetime import datetime
 
 fallo = 'authentication failure;'
 log = open ('auth.log', 'r')
+di={}
 li=[]
 for linea in log.readlines():
 	if fallo in linea:
-		cats = linea[:15]
-		ts = datetime.strptime(cats, '%b %d %H:%M:%S')
-		li.append(cats)
-		
+		cadena = linea[linea.find('rhost')+6:]
+		li2=(cadena.split())
+		if li2[0] in linea:
+			li=[]
+			cats = linea[:15]
+			ts = datetime.strptime(cats, '%b %d %H:%M:%S')
+			li.append(cats)
+			if li2[0] not in di:
+				di[li2[0]]=li
+				del(li)
 log.close()
-print li
-
-#pillar desde la 129 hasta la 144 
+print di
