@@ -26,3 +26,4 @@ Nov 24 21:19:48 backupRiSC1 sshd[31726]: pam_unix(sshd:auth): authentication fai
 Nov 24 21:32:38 backupRiSC1 sshd[31740]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=122.225.18.142  user=root
 Nov 25 08:06:50 backupRiSC1 sshd[32649]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.216.12.126  user=rosc
 Nov 26 08:06:50 backupRiSC1 sshd[32649]: pam_unix(sshd:auth): authentication success; logname= uid=0 euid=0 tty=ssh ruser= rhost=217.216.12.129  user=pakito
+
